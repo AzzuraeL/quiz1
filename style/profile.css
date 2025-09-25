@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.full-bg {
+    position: fixed;
+    inset: 0;
+    background: url('../assets/IF.jpg') no-repeat center/cover;
+    filter: blur(10px);
+    transform: scale(1.1);
+    z-index: -1;
+}
+
+.about-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    margin-bottom: 0.5rem;
+}
+
+.about-underline {
+    width: 60px;
+    height: 4px;
+    background: white;
+    margin-bottom: 2rem;
+}
+
+.profile-img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.profile-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    margin-bottom: 1rem;
+}
+
+.profile-description {
+    font-style: italic;
+    font-size: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+    margin-bottom: 2rem;
+}
+
+.profile-text,
+.contact-info p {
+    font-size: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.content-section {
+    position: relative;
+    z-index: 1;
+    animation: slideIn 0.8s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.activities-section {
+    margin-bottom: 3rem;
+    animation: slideIn 0.8s ease-out 0.2s both;
+}
+
+.activities-section h2 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
